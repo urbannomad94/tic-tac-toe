@@ -1,0 +1,113 @@
+:root {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  --color1: rgb(55, 57, 62);
+  --color2: rgb(47, 49, 54);
+}
+
+body {
+  background-color: var(--color1);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: var(--color2);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  cursor: pointer;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.right-border {
+  border-right: 3px solid white;
+}
+
+.bottom-border {
+  border-bottom: 3px solid white;
+}
+
+section {
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin-top: 30px;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+section button {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--color2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section button:hover {
+  transform: scale(1.1);
+}
+
+section button:active {
+  transform: scale(0.9);
+}
+
+footer {
+  background-color: var(--color2);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}

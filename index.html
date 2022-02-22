@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <div class="board ">
+            <div class="tile right-border bottom-border" data-index="1"></div>
+            <div class="tile right-border bottom-border" data-index="2"></div>
+            <div class="tile bottom-border" data-index="3"></div>
+
+            <div class="tile right-border bottom-border" data-index="4"></div>
+            <div class="tile right-border bottom-border" data-index="5"></div>
+            <div class="tile bottom-border" data-index="6"></div>
+
+            <div class="tile right-border" data-index="7"></div>
+            <div class="tile right-border" data-index="8"></div>
+            <div class="tile" data-index="9"></div>
+        </div>
+    </main>
+    <section class="game-over-display hidden">
+        <h2>Game Over!</h2>
+        <h2 id="winner"></h2>
+        <button class="restart">Play Again</button>
+    </section>
+    <footer>
+        <span>Made by <a href="https://github.com/urbannomad94">UrbanNomad94</a></span>
+    </footer>
+</body>
+</html>
